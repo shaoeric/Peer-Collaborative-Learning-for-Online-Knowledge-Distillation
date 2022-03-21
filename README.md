@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Reproduction of ***Peer Collaborative Learning for Online Knowledge Distillation*** in AAAI2021, the paper link is at [here]([PRELIMINARY VERSION DO NOT CITE (aaai.org)](https://www.aaai.org/AAAI21Papers/AAAI-3270.WuG.pdf))
+Reproduction of ***Peer Collaborative Learning for Online Knowledge Distillation*** in AAAI2021, the paper link is at [here](https://www.aaai.org/AAAI21Papers/AAAI-3270.WuG.pdf)
 
 ![overview](./figs/overview.png)
 
@@ -70,15 +70,6 @@ This work is developed based on the following works:
 
 [DefangChen/OKDDip-AAAI2020: This is a PyTorch-1.0 implementation for the AAAI-2020 paper (Online Knowledge Distillation with Diverse Peers). (github.com)](https://github.com/DefangChen/OKDDip-AAAI2020)
 
-## Citation
+## Finally
 
-If you find this project useful in your research, please consider cite:
-
-```
-@misc{2022torchatom,
-    title={Torch-atom: A basic and simple training framework for pytorch},
-    author={Baitan Shao},
-    howpublished = {\url{https://github.com/shaoeric/torch-atom}},
-    year={2022}
-}
-```
+If you find this work useful, please give us a star, thanks   :）
