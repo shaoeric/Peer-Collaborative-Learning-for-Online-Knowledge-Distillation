@@ -1,0 +1,11 @@
+SGD:
+  momentum: 0.9
+  weight_decay: 5e-4
+  dampening: 0
+  nesterov: True
+
+Adam:
+  betas: [0.9, 0.999]
+  eps: 1e-8
+  weight_decay: 0
+  amsgrad: False
