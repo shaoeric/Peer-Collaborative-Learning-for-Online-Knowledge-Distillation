@@ -38,7 +38,7 @@ In our replementation, we recored the best accuracy score among the three peers,
 
 ## Results
 
-all the replemetation training logs can be downloaded in package at [pan.baidu]() code:
+all the replemetation training logs can be downloaded in package at [pan.baidu](https://pan.baidu.com/s/1WcYp-JWHV_RpVeGQ3pZ22g) code:k8ff
 
 ### CIFAR100
 
@@ -48,7 +48,7 @@ all the replemetation training logs can be downloaded in package at [pan.baidu](
 | ResNet-110     | 77.86±0.50 | 78.83±0.58 | 78.40±0.36 | 77.22±0.41 | 78.54±0.26 | 78.28±0.32 | 79.98±0.55 | 79.07 |
 | VGG-16         | 75.52±0.10 | 74.33±0.08 | 74.37±0.39 | 70.87±0.99 | 74.68±0.05 | 75.67±0.22 | 76.89±0.25 | 76.98 |
 | DenseNet-40-12 | 73.06±0.31 | 71.45±0.34 | 71.60±0.38 | 71.25±0.35 | 71.23±0.14 | 72.52±0.42 | 73.09±0.16 | 73.11 |
-| WRN-20-8       | 79.77±0.07 | 79.40±0.12 | 79.10±0.39 | 78.22±0.14 | 78.83±0.06 | 79.37±0.30 | 80.51±0.49 |       |
+| WRN-20-8       | 79.77±0.07 | 79.40±0.12 | 79.10±0.39 | 78.22±0.14 | 78.83±0.06 | 79.37±0.30 | 80.51±0.49 | 80.58 |
 
 ### CIFAR10
 
@@ -58,7 +58,7 @@ all the replemetation training logs can be downloaded in package at [pan.baidu](
 | ResNet-110     | 94.53±0.25 | 95.19±0.11 | 95.16±0.30 | 94.72±0.06 | 95.14±0.10 | 95.11±0.16 | 95.53±0.16 | 95.47 |
 | VGG-16         | 94.13±0.07 | 94.14±0.15 | 94.14±0.23 | 93.22±0.08 | 93.98±0.06 | 94.09±0.12 | 94.74±0.02 | 93.87 |
 | DenseNet-40-12 | 93.59±0.26 | 93.05±0.25 | 93.08±0.21 | 93.28±0.16 | 92.64±0.22 | 93.87±0.08 | 94.13±0.13 | 93.69 |
-| WRN-20-8       | 95.20±0.13 | 94.59±0.08 | 94.70±0.14 | 94.72±0.13 | 94.83±0.15 | 95.27±0.16 | 95.42±0.04 |       |
+| WRN-20-8       | 95.20±0.13 | 94.59±0.08 | 94.70±0.14 | 94.72±0.13 | 94.83±0.15 | 95.27±0.16 | 95.42±0.04 | 95.53 |
 
 ## Acknowledgement
 
