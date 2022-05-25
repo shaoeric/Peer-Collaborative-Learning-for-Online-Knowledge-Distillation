@@ -14,6 +14,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.utils.checkpoint as cp
 from collections import OrderedDict
+from copy import deepcopy
 
 __all__ = ['DenseNet', 'densenetd40k12', 'densenetd100k12', 'densenetd100k40', 'densenetd190k12']
 
@@ -168,8 +169,8 @@ class DenseNet(nn.Module):
         fc = nn.Linear(num_features, num_classes)
 
         self.branch1 = Branch(block, fc, self.avgpool_size)
-        self.branch2 = Branch(block, fc, self.avgpool_size)
-        self.branch3 = Branch(block, fc, self.avgpool_size)
+        self.branch2 = deepcopy(self.branch1)
+        self.branch3 = deepcopy(self.branch1)
         self.en_fc = nn.Linear(fc.in_features * 3, num_classes)
 
         if self.ema:

@@ -8,6 +8,7 @@ Reference:
 
 import torch
 import torch.nn as nn
+from copy import deepcopy
 
 __all__ = ['vgg16', 'vgg19']
 
@@ -65,8 +66,8 @@ class VGG(nn.Module):
         )
 
         self.branch1 = Branch(layer, fc)
-        self.branch2 = Branch(layer, fc)
-        self.branch3 = Branch(layer, fc)
+        self.branch2 = deepcopy(self.branch1)
+        self.branch3 = deepcopy(self.branch1)
 
         self.en_fc = nn.Linear(512 * 3, num_classes)
         if self.ema:
