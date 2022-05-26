@@ -23,11 +23,12 @@ def prepare_environment(args):
 
     config.model['name'] = args.model
     
+    if args.seed is not None:
+        config.environment['seed'] = args.seed
     seed = config.environment['seed']
     set_seed(seed)
 
     if config.environment.cuda.flag:
-        os.environ['CUDA_VISIBLE_DEVICES'] = config.environment.cuda.devices
         torch.backends.cudnn.benchmark = True
         torch.backends.cudnn.deterministic = True
     return config
@@ -74,6 +75,8 @@ def main():
     parser.add_argument('--config_path', type=str, default="./configs/20220223_cifar100.yml")
     parser.add_argument('--model', type=str, default='resnet18')
     parser.add_argument('--save_dir', type=str)
+    parser.add_argument('--seed', type=int)
+
     args = parser.parse_args()
 
     config = prepare_environment(args)
